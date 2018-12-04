@@ -1,0 +1,186 @@
+body {
+    padding-top: 65px;
+    position: relative;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 380px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column.
+   Also, add a 8pm to the bottom margin
+*/
+.dl-horizontal dt {
+    white-space: normal;
+    margin-bottom: 8px;
+}
+
+td > dl.dl-horizontal {
+    margin-bottom: 0 !important;
+}
+
+td > .dl-horizontal dt {
+    white-space: normal;
+    margin-bottom: 1px;
+    padding-bottom: 0;
+}
+
+table.table-condensed div.alert
+{
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px 10px;
+  margin-bottom: 10px
+}
+
+
+.large-padding-sections > section {
+    padding-top: 35px;
+}
+
+.navbar-brand-logo 
+{
+  height: 50px;
+}
+
+.navbar-brand 
+{
+  padding: 5px 15px;
+}
+
+.example-carousel
+{
+  color: #2F2F2F;
+}
+
+pre.wrap-xs {
+    max-width: 200px;
+}
+
+pre.wrap-xs {
+    max-width: 150px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+pre.wrap-sm {
+    max-width: 300px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+pre.wrap-md {
+    max-width: 450px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+pre.wrap-lg {
+    max-width: 650px;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+ul.affix-menu li > a
+{
+    padding : 1px 10px;
+}
+
+.scrollspy-y-fix {
+    height: -moz-calc(100% - 80px); /* FireFox */
+    height: -webkit-calc(100% - 80px); /* Webkit */
+    height: -o-calc(100% - 80px); /* Opera */
+    height: calc(100% - 80px); /* Standard */
+
+    overflow-y: auto;
+}
+
+
+div.carousel-caption-below
+{
+    position: relative;
+    left: auto;
+    right: auto;
+    padding: 0px;
+    color: #231F20;
+}
+
+.bottom-spacer
+{
+  margin-bottom: 20px;
+}
+
+.carousel-indicators-below
+{
+  bottom: 0;
+}
+
+.carousel-indicators-below li 
+{
+  border-color:#999;
+  background-color:#ccc;
+}
+
+.carousel-caption-below > p,
+.carousel-caption-below > h3
+{
+  color: #231F20;
+}
+
+.footer p
+{
+  padding: 5px;
+  font-weight: bold;
+}
+
+.transparent {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+blockquote.primary {
+    border-left: 5px solid #428bca;
+    background-color: d9534f;
+}
+blockquote.success {
+    border-left: 5px solid #5cb85c;
+}
+blockquote.info {
+    border-left: 5px solid #5bc0de;
+}
+blockquote.warning {
+    border-left: 5px solid #f0ad4e;
+}
+blockquote.danger {
+    border-left: 5px solid #d9534f;
+}

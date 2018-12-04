@@ -1,0 +1,7 @@
+[
+    {
+        "model-name": "Biography",
+        "fields-file": "demos/code-generator-v2-1/biographies.json",
+        "table-name": "code_generator_v12_biographies"
+    }
+]

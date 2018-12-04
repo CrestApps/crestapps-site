@@ -1,0 +1,45 @@
+[{
+    "name": "title",
+    "data-type": "varchar",
+    "html-type": "text",
+    "validation": "required|min:1|max:20",
+    "label": "Title without translations",
+    "is-index": false,
+    "is-on-index": true,
+    "is-on-show": true,
+    "is-on-form": true
+}, {
+    "name": "name",
+    "data-type": "varchar",
+    "html-type": "text",
+    "validation": "required|min:1|max:20",
+    "labels": {
+        "en": "Name in English",
+        "ar": "Name in Arabic",
+        "fr": "Name in French"
+    },
+    "is-index": false,
+    "is-on-views": true
+}, {
+    "name": "gender",
+    "data-type": "int",
+    "html-type": "select",
+    "validation": "required|int",
+    "labels": {
+        "en": "gender in English",
+        "ar": "gender in Arabic",
+        "fr": "gender in French"
+    },
+    "options": {
+        "": "Please select your gender",
+        "1": "Male",
+        "2": "Female"
+    },
+    "is-index": false,
+    "is-on-views": true
+}, {
+    "name": "id",
+    "is-auto-increment": true,
+    "data-type": "bigint",
+    "is-on-form": false
+}]

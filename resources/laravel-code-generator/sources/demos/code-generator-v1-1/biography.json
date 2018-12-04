@@ -1,0 +1,92 @@
+[{
+    "name": "id",
+    "is-auto-increment": true
+}, {
+    "name": "name",
+    "validation": "required|string|min:1|max:100",
+    "label": "Full name",
+    "is-index": false,
+    "is-on-views": true
+}, {
+    "name": "age",
+    "html-type": "number",
+    "validation": "required|integer|min:18|max:80",
+    "label": "Age",
+    "is-index": false,
+    "is-on-views": true
+}, {
+    "name": "biography",
+    "html-type": "textarea",
+    "validation": "string|max:1000",
+    "label": "Biography",
+    "is-index": false,
+    "is-on-index": false
+}, {
+    "name": "sport",
+    "data-type": "enum",
+    "html-type": "select",
+    "validation": "required",
+    "labels": "Favorite sport",
+    "placeholder": "Select a sport",
+    "options": {
+        "basketball": "Basketball",
+        "football": "Football",
+        "soccer": "Soccer"
+    }
+},{
+    "name": "gender",
+    "data-type": "char",
+    "data-type-params": [
+        10
+    ],
+    "html-type": "radio",
+    "validation": "required",
+    "labels": "Gender",
+    "options": {
+        "": "Please select your gender",
+        "male": "Male",
+        "female": "Female"
+    },
+    "is-on-views": true
+}, {
+    "name": "colors",
+    "data-type": "varchar",
+    "html-type": "checkbox",
+    "validation": "required",
+    "labels": "Favorite colors",
+    "options": [
+        "Black",
+        "Red",
+        "Green",
+        "Yellow",
+        "White"
+    ],
+    "is-inline-options": true,
+    "is-on-index": true
+}, {
+    "name": "photo",
+    "data-type": "varchar",
+    "data-type-params": [
+        500
+    ],
+    "html-type": "file",
+    "validation": "image",
+    "labels": "Photo",
+    "is-on-index": false
+}, {
+    "name": "range",
+    "data-type": "int",
+    "html-type": "selectRange|20:50",
+    "validation": "int|required",
+    "labels": "Range",
+    "placeholder": "Select a number",
+    "is-on-index": false
+}, {
+    "name": "month",
+    "data-type": "int",
+    "html-type": "selectMonth",
+    "validation": "int",
+    "labels": "Month",
+    "placeholder": "Select a month",
+    "is-on-index": false
+}]
